@@ -1,32 +1,31 @@
 import { useState } from 'react'
-
-import addTask from './addTask';
-import reports from './reports';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import AddTask from './components/addTask';
+import Reports from './components/reports';
+import AddTask2 from './components/addTask2';
 import {
   createBrowserRouter,
   RouterProvider,
   BrowserRouter,
-   Routes, Route, Link
+  Routes, Route, Link
 } from "react-router";
 
 
 function App() {
-  
+
 
   return (
-    <>
-       <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<addTask />} />
+    
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={<AddTask />}
+          />
 
-        <Route path="/about" element={<About />} />
-
-        <Route path="/contact" element={<Contact />} />
-
-      </Routes>
-    </BrowserRouter>
-    </>
+        </Routes>
+      </BrowserRouter>
+    
   )
 }
 

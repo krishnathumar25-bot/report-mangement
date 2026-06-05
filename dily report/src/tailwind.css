@@ -1,0 +1,12 @@
+@import "tailwindcss";
+.bg{
+    @apply min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-400 via-blue-500 to-blue-700 p-6
+}
+
+.formbg{
+    @apply w-full max-w-4xl bg-white/30 backdrop-blur-lg rounded-3xl shadow-2xl sm:p-7 p-3
+}
+
+.formGroup{
+    @apply flex gap-4 mb-4
+}

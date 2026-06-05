@@ -1,11 +1,14 @@
+
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './tailwind.css'
+import './index.scss'
 import App from './App.jsx'
-import addTask from './addTask.jsx'
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <addTask />
+    <App />
   </StrictMode>,
 )
